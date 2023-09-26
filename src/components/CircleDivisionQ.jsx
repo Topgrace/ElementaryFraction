@@ -1,15 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import styles from './CircleDivisionQ.module.css';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
 
-CircleDivisionQ.propTypes={
-dotsN:PropTypes.number.isRequired,
-centerDot:PropTypes.bool.isRequired,
-width:PropTypes.string.isRequired,
-height:PropTypes.string.isRequired,
-radius:PropTypes.number.isRequired
-};
+import clsx from 'clsx';
 
 export default function CircleDivisionQ(props) {
   const [lines, setLines] = useState([]);
@@ -105,7 +97,7 @@ export default function CircleDivisionQ(props) {
         );
         if (!lineExists) {
           //기존에 그려진 선분이 아님
-          setLines(prevLines =>{[...prevLines, newLine]});
+          setLines([...lines, newLine]);
           //setActivePoint(null);
           //setActiveCircleIndex(null);
         }
@@ -119,7 +111,7 @@ export default function CircleDivisionQ(props) {
         setDisplayAnswer(false);
       }
     },
-    [activePoint,activeCircleIndex,lines]
+    [activePoint]
   );
 
   const handleDotMouseUp = useCallback(
@@ -140,7 +132,7 @@ export default function CircleDivisionQ(props) {
               line.end.index === newLine.start.index)
         );
         if (!lineExists) {
-          setLines(prevLines=>[...prevLines, newLine]);
+          setLines([...lines, newLine]);
           //setActivePoint(null);
           //setActiveCircleIndex(null);
         }
