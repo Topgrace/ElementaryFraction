@@ -1,0 +1,95 @@
+.quizContainer{
+  background-color: #fff9e6; 
+  border-radius: 10px;  
+
+  border: 1px solid black;  
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.optionButton {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: block;
+  width: 100%;
+}
+
+.optionButton[isSelectedOption="true"] {
+  background-color: grey;
+}
+
+.optionButton:hover{
+  color: #fff;
+  background-color: #19a596;
+  text-decoration: none;
+}
+
+.submitButton {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  color: black;
+  cursor: not-allowed;
+}
+
+.directionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.previousButton,
+.nextButton {
+  color: white;
+  border: 1px solid black;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.previousButton:disabled,
+.nextButton:disabled {
+  background-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+}
+
+.previousButton:hover:not(:disabled),
+.nextButton:hover:not(:disabled) {
+  background-color: #0069d9;
+}
+
+.correctAnswer .animatedText {
+  color: green;
+}
+
+.wrongAnswer .animatedText {
+  color: red;
+}
+
+.animatedText {
+  font-size: 2rem;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* 애니메이션 스타일 추가 */
+  animation: typing 3s steps(20) forwards;
+}
+
+/* 키프레임 추가 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

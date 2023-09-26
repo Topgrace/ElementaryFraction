@@ -1,0 +1,79 @@
+.quizContainer {
+  text-align: center;
+  background-color: #fff9e6;
+  border-radius: 10px;
+
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.containerActive {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.containerDefault {
+  cursor: default;
+  border: 1px solid black;
+}
+.circle {
+  fill: #6666cc;
+  r: 4.5;
+}
+
+.circleGroup .active {
+  fill: #4e4eab;
+  r: 6.5;
+}
+
+.lineGroup:hover .line {
+  stroke-dasharray: 10;
+  stroke: gray;
+}
+
+.lineGroup:hover {
+  cursor: pointer;
+}
+
+.circleGroup:hover {
+  cursor: pointer;
+}
+.circleGroup:hover .circle:not(.active) {
+  fill: #4e4eab;
+  r: 5.5;
+}
+
+.line {
+  cursor: pointer;
+  transition: stroke-dasharray 0.3s ease, stroke 0.3s ease;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.inactiveLine {
+  cursor: default;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.submitButton {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  color: black;
+  cursor: not-allowed;
+}
+
+.correctAnswer {
+  color: green;
+}
+
+.wrongAnswer {
+  color: red;
+}

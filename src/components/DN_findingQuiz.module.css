@@ -1,0 +1,71 @@
+
+.quizContainer {
+  text-align: center;
+  background-color: #fff9e6; 
+  border-radius: 10px;  
+
+  border: 1px solid black;  
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  cursor:pointer;
+  text-align:center;
+}
+
+.boxDefault {
+  background-color: #fff;
+}
+
+.box:hover{
+  background-color: #eae;
+}
+
+.boxSelected {
+  background-color: #aee;
+}
+
+.hrStyle {
+ width: 100%; 
+ height: 5px; 
+ background-color:black; 
+ border: none; 
+ margin: 10px auto;
+}
+
+.buttonGroup,
+.answerCheck {
+   margin-top:20px;  
+}
+.directionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.previousButton,
+.nextButton {
+  color: white;
+  border: 1px solid black;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.previousButton:disabled,
+.nextButton:disabled {
+  background-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+}
+
+.previousButton:hover:not(:disabled),
+.nextButton:hover:not(:disabled) {
+  background-color: #0069d9;
+}
+
