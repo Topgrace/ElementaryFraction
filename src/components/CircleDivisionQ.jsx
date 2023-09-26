@@ -49,7 +49,7 @@ export default function CircleDivisionQ(props) {
     [svgRef]
   );
 
-  const handleDotClick = useCallback(
+  /* const handleDotClick = useCallback(
     (e, point, i) => {
       //e.preventDefault();
       //console.log(e) ;
@@ -83,7 +83,7 @@ export default function CircleDivisionQ(props) {
       }
     },
     [activePoint]
-  );
+  ); */
 
   const handleDotMouseDown = useCallback(
     (e, point, i) => {      

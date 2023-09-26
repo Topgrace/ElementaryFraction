@@ -1,8 +1,12 @@
 import { useState, useCallback, useRef } from 'react';
 import styles from './RectDivisionQ.module.css';
-
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
-
+RectDivisionQ.propTypes={
+  dotsN:PropTypes.number.isRequired,  
+  width:PropTypes.string.isRequired,
+  height:PropTypes.string.isRequired, 
+  };
 export default function RectDivisionQ(props) {
   const [lines, setLines] = useState([]);
   const [activePoint, setActivePoint] = useState(null);
