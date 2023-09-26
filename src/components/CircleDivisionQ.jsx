@@ -1,8 +1,14 @@
 import { useState, useCallback, useRef } from 'react';
 import styles from './CircleDivisionQ.module.css';
-
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
-
+CircleDivisionQ.propTypes={
+  dotsN:PropTypes.number.isRequired,
+  centerDot:PropTypes.string.isRequired,
+  width:PropTypes.string.isRequired,
+  height:PropTypes.string.isRequired,
+  radius:PropTypes.number.isRequired
+  };
 export default function CircleDivisionQ(props) {
   const [lines, setLines] = useState([]);
   const [activePoint, setActivePoint] = useState(null);
