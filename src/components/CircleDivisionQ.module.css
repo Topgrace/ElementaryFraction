@@ -1,9 +1,9 @@
 .quizContainer {
   text-align: center;
-  background-color: #fff9e6; 
-  border-radius: 10px;  
+  background-color: #fff9e6;
+  border-radius: 10px;
 
-  border: 1px solid black;  
+  border: 1px solid black;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -14,7 +14,7 @@
 }
 .containerDefault {
   cursor: default;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 .circle {
   fill: #d85ae2;
