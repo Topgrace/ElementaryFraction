@@ -14,7 +14,7 @@
 }
 .containerDefault {
   cursor: default;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
 }
 .circle {
   fill: #d85ae2;
